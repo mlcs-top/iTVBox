@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/iv_screensaver"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/lv_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginLeft="@dimen/vs_35"
+        android:layout_marginRight="@dimen/vs_35"
+        android:layout_marginBottom="@dimen/vs_24"
+        android:background="@drawable/shape_bg_black_text_white3"
+        android:paddingLeft="@dimen/vs_35"
+        android:paddingTop="@dimen/vs_12"
+        android:paddingRight="@dimen/vs_35"
+        android:paddingBottom="@dimen/vs_12"
+        tools:ignore="RtlHardcoded"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ok_go_ss"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="@dimen/vs_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="按"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:textSize="@dimen/vs_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/vs_8"
+                android:layout_marginRight="@dimen/vs_8"
+                android:background="@drawable/shape_bg_black_text_white2"
+                android:paddingLeft="@dimen/vs_8"
+                android:paddingTop="@dimen/vs_1"
+                android:paddingRight="@dimen/vs_8"
+                android:paddingBottom="@dimen/vs_1"
+                android:text="OK"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:textSize="@dimen/vs_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="键查看详情，"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ad_name"
+            android:textSize="@dimen/vs_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="按"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:textSize="@dimen/vs_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_bg_black_text_white2"
+            android:paddingLeft="@dimen/vs_8"
+            android:paddingTop="@dimen/vs_1"
+            android:paddingRight="@dimen/vs_8"
+            android:paddingBottom="@dimen/vs_3"
+            android:layout_marginLeft="@dimen/vs_8"
+            android:layout_marginRight="@dimen/vs_8"
+            android:layout_marginTop="@dimen/vs_1"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_return" />
+
+        <TextView
+            android:textSize="@dimen/vs_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="键退出"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/shape_dialog_filter_bg"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/vs_60"
+        android:paddingLeft="@dimen/vs_60"
+        tools:ignore="RtlSymmetry">
+
+        <LinearLayout
+            android:id="@+id/ll_vip_user"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vs_30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/activity_vip_avatar"
+                android:layout_width="@dimen/vs_80"
+                android:layout_height="@dimen/vs_80"
+                android:layout_gravity="center|top"
+                android:scaleType="fitXY"
+                android:src="@drawable/channel_user_avatar_default" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/vs_20"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/vs_20">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/activity_vip_user_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加载中"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_30"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/activity_vip_icon"
+                        android:layout_width="@dimen/vs_30"
+                        android:layout_height="@dimen/vs_30"
+                        android:layout_marginStart="@dimen/vs_10"
+                        android:layout_marginLeft="@dimen/vs_10" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/activity_vip_user_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您还不是影视会员，马上开通会员吧"
+                    android:textColor="#cbb190"
+                    android:textSize="@dimen/vs_24" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_user_login"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/vs_30"
+            android:background="@drawable/shape_bg_black_text_white3"
+            android:gravity="center"
+            android:focusable="true"
+            android:layout_height="@dimen/vs_50"
+            android:paddingStart="@dimen/vs_24"
+            android:paddingEnd="@dimen/vs_24">
+
+            <TextView
+                android:id="@+id/ll_user_login_text"
+                android:textColor="@color/white"
+                android:textSize="@dimen/ts_24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/vs_35"
+            android:paddingBottom="@dimen/vs_35">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/vs_20"
+                    android:layout_marginRight="@dimen/vs_20"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/vs_12"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/vs_35"
+                            android:layout_marginRight="@dimen/vs_35"
+                            android:text="@string/app_name"
+                            android:textColor="#E8D2B0"
+                            android:textSize="@dimen/vs_35" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="适用于智能电视·机顶盒·手机·电脑·平板"
+                            android:textColor="#9E9793"
+                            android:textSize="@dimen/ts_24" />
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        tools:ignore="NestedWeights">
+
+                        <ImageView
+                            android:id="@+id/iv_anim_loading"
+                            android:visibility="gone"
+                            android:layout_gravity="center"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/anim_loading"/>
+
+                        <TextView
+                            android:id="@+id/iv_anim_null"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:layout_width="wrap_content"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/vs_30"
+                            android:text="暂无"
+                            android:layout_height="wrap_content"/>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/activity_vip_list"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_height="match_parent"
+                            android:overScrollMode="never"
+                            tools:ignore="NestedWeights" />
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/vs_8">
+
+                        <LinearLayout
+                            android:id="@+id/activity_vip_jump_card"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_vip_bt_selector"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/vs_30"
+                            android:paddingTop="@dimen/vs_8"
+                            android:paddingRight="@dimen/vs_30"
+                            android:paddingBottom="@dimen/vs_8">
+
+                            <TextView
+                                android:id="@+id/activity_vip_pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="使用兑换码"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/vs_24" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:visibility="gone"
+                            android:id="@+id/ll_payType_wx"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/vs_5"
+                            android:layout_marginLeft="@dimen/vs_5"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_vip_bt_selector"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/vs_30"
+                            android:paddingTop="@dimen/vs_8"
+                            android:paddingRight="@dimen/vs_30"
+                            android:paddingBottom="@dimen/vs_8">
+
+                            <TextView
+                                android:id="@+id/ll_payType_tt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="微信支付"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/vs_24" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_payType_aliB"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/vs_5"
+                            android:layout_marginLeft="@dimen/vs_5"
+                            android:layout_weight="1"
+                            android:background="@drawable/activity_vip_bt_selector"
+                            android:focusable="true"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/vs_30"
+                            android:paddingTop="@dimen/vs_8"
+                            android:paddingRight="@dimen/vs_30"
+                            android:paddingBottom="@dimen/vs_8">
+
+                            <TextView
+                                android:id="@+id/ll_payType_ttt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="支付宝支付"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/vs_24" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_marginEnd="@dimen/vs_35"
+                        android:layout_marginRight="@dimen/vs_35"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/activity_tv_user_price"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/vs_24"
+                            android:text="按(OK)键支付"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/ts_24" />
+
+                        <LinearLayout
+                            android:layout_marginTop="@dimen/vs_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="@dimen/vs_5"
+                            android:paddingRight="@dimen/vs_5"
+                            android:paddingBottom="@dimen/vs_15">
+
+                            <LinearLayout
+                                android:visibility="gone"
+                                android:id="@+id/tv_payType_tt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/vs_15">
+
+                                <TextView
+                                    android:id="@+id/tv_payType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="支付方式 "
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/ts_24" />
+
+                                <TextView
+                                    android:id="@+id/activity_vip_qrcode_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="@dimen/vs_5"
+                                    android:text=" 微信"
+                                    android:textColor="#E72118"
+                                    android:textSize="@dimen/ts_34" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/tv_______"
+                                android:layout_width="@dimen/vs_200"
+                                android:layout_height="@dimen/vs_1"
+                                android:visibility="gone"
+                                android:layout_marginTop="@dimen/vs_35"
+                                android:background="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:textSize="@dimen/ts_24"
+                                android:layout_marginTop="@dimen/vs_35"
+                                android:layout_height="wrap_content"
+                                android:text="如有疑问请扫码联系客服"/>
+
+                            <ImageView
+                                android:padding="@dimen/vs_10"
+                                android:id="@+id/activity_vip_qrcode_img"
+                                android:layout_width="@dimen/vs_300"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

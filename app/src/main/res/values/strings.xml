@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">汇看</string>
+    <string name="skip">%1$d</string>
+    <string name="exitdialog_out">退出</string>
+    <string name="exitdialog_back">再看会儿</string>
+    <string name="version_updata_downlond">正在后台下载,请稍后</string>
+    <string name="updata_bg">壁纸更换成功</string>
+    <string name="app_downlond">正在后台下载，完成后提示安装...</string>
+    <string name="is_loading">正在登录...</string>
+    <string name="is_loadings">设备认证...</string>
+    <string name="is_registing">正在注册...</string>
+    <string name="is_registing1">用户名已被注册</string>
+    <string name="is_registing2">账号或密码错误</string>
+    <string name="hm_exit_live">再按一次返回键退出直播</string>
+    <string name="dia_history_live">历史直播列表</string>
+    <string name="dia_history_list">历史配置列表</string>
+    <string name="hm_date1">HH:mm</string>
+    <string name="hm_date2">MM月dd日  EE</string>
+    <string name="hm_cache_del">已删除缓存</string>
+    <string name="hm_ok">加载成功</string>
+    <string name="hm_notok">加载失败</string>
+    <string name="hm_retry">重试</string>
+    <string name="hm_cancel">取消</string>
+    <string name="dia_source">请选择数据源</string>
+    <string name="mn_wall_change">换张壁纸</string>
+    <string name="mn_wall_load">壁纸更换中</string>
+    <string name="mn_wall_reset">重置壁纸</string>
+
+    // Search Page //
+    <string name="search_input">输入内容不能为空</string>
+    <string name="search_site">没有指定搜索源</string>
+    <string name="search_checkAll">全选</string>
+    <string name="search_clearAll">全不选</string>
+    <string name="act_search_rem">远程搜索</string>
+    <string name="act_search_trend">热门搜索</string>
+    <string name="act_search_txt">请输入要搜索的内容</string>
+    <string name="act_search">搜索</string>
+    <string name="act_search_clr">清空</string>
+    <string name="act_search_del">删除</string>
+    <string name="vod_remaining_time">影片剩余</string>
+    <string name="vod_ends_at">影片结束</string>
+
+
+
+</resources>

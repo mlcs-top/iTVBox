@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/vs_50"
+    android:paddingTop="@dimen/vs_30"
+    android:paddingRight="@dimen/vs_50"
+    android:paddingBottom="@dimen/ts_30">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/vs_80"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="关于"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/vs_40"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|right"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/iv_AboutActivity_logo"
+                    android:layout_width="@dimen/vs_128"
+                    android:layout_height="@dimen/vs_60"
+                    android:src="@drawable/sm_logo" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/vs_20"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/vs_50"
+            android:paddingRight="@dimen/vs_50"
+          >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/vs_100">
+
+                <TextView
+                    android:id="@+id/activity_about_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/vs_24" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/vs_30"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vs_60"
+                    android:background="@drawable/shape_setting_model_focus"
+                    android:focusable="true"
+                    android:paddingStart="@dimen/vs_30"
+                    android:paddingLeft="@dimen/vs_30"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:text="版本号:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+
+                    <TextView
+                        android:id="@+id/activity_about_version"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical"
+                        android:text="6.1.5.22.07.28.DBEL_TVAPP.0.0.Release"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_Update"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vs_60"
+                    android:background="@drawable/shape_setting_model_focus5"
+                    android:focusable="true"
+                    android:paddingStart="@dimen/vs_30"
+                    android:paddingLeft="@dimen/vs_30"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:text="是否有新版本:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+
+                    <TextView
+                        android:id="@+id/activity_about_check"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical"
+                        android:text="否"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vs_60"
+                    android:background="@drawable/shape_setting_model_focus"
+                    android:focusable="true"
+                    android:paddingStart="@dimen/vs_30"
+                    android:paddingLeft="@dimen/vs_30"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:text="设备唯一ID:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+
+                    <TextView
+                        android:id="@+id/activity_about_mac"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical"
+                        android:text="00:00:00:00:00:00"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vs_60"
+                    android:background="@drawable/shape_setting_model_focus5"
+                    android:focusable="true"
+                    android:paddingStart="@dimen/vs_30"
+                    android:paddingLeft="@dimen/vs_30"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:text="用户反馈群:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+
+                    <TextView
+                        android:id="@+id/user_fan_kui"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical"
+                        android:text="888888"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/vs_60"
+                    android:background="@drawable/shape_setting_model_focus"
+                    android:focusable="true"
+                    android:paddingStart="@dimen/vs_30"
+                    android:paddingLeft="@dimen/vs_30"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:gravity="center_vertical"
+                        android:text="是否需认证:"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+
+                    <TextView
+                        android:id="@+id/activity_about_auth"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.2"
+                        android:gravity="center_vertical"
+                        android:text="是"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/vs_24" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

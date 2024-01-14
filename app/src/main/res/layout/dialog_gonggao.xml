@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/vs_30">
+
+    <WebView
+        android:id="@+id/tv_container"
+        android:layout_width="@dimen/vs_600"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/ts_50"
+        android:lineSpacingMultiplier="0"
+        android:text="本软件只提供聚合展示功能，所有资源来自网上, 软件不参与任何制作, 上传, 储存, 下载等内容。"
+        android:textColor="@color/color_CC000000"
+        android:textSize="@dimen/ts_24" />
+
+</LinearLayout>

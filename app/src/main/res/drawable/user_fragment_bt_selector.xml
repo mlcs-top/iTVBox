@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/user_fragment_bg" android:state_focused="true" />
+
+    <item android:state_focused="false">
+        <shape>
+            <corners android:radius="@dimen/vs_24" />
+            <solid android:color="#2b2b2b" />
+        </shape>
+    </item>
+
+</selector>

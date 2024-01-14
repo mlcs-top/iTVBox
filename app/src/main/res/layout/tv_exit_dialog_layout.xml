@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/vs_480"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="@dimen/vs_480"
+        android:layout_height="@dimen/vs_220"
+        android:layout_marginBottom="@dimen/vs_5"
+        android:background="@drawable/menu_bg_n"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/vs_5">
+
+        <TextView
+            android:text="温馨提示"
+            android:id="@+id/tv_exit_msg_titile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/vs_15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/vs_20" />
+
+        <LinearLayout
+            android:id="@+id/itv_exit_msg"
+            android:layout_width="@dimen/vs_480"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/tv_exit_msg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minLines="3"
+                android:paddingLeft="@dimen/vs_15"
+                android:paddingTop="@dimen/vs_10"
+                android:paddingRight="@dimen/vs_15"
+                android:paddingBottom="@dimen/vs_10"
+                android:textColor="@color/detail_point"
+                android:textSize="@dimen/vs_24" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_exit_ok"
+        android:layout_width="@dimen/vs_480"
+        android:layout_height="@dimen/vs_70"
+        android:background="@drawable/menu_bg_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/vs_70"
+            android:layout_height="@dimen/vs_70"
+            android:scaleType="fitXY"
+            android:src="@drawable/itv_exit_ok" />
+
+        <TextView
+            android:id="@+id/tv_exit_confirm"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/exitdialog_out"
+            android:textColor="@color/white"
+            android:textSize="@dimen/vs_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lv_exit_cancle"
+        android:layout_width="@dimen/vs_480"
+        android:layout_height="@dimen/vs_70"
+        android:layout_marginTop="@dimen/vs_5"
+        android:background="@drawable/menu_bg_selector"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/vs_70"
+            android:layout_height="@dimen/vs_70"
+            android:scaleType="fitXY"
+            android:src="@drawable/itv_exit_cancle" />
+
+        <TextView
+            android:id="@+id/tv_exit_cancle"
+            android:layout_width="0.0px"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/exitdialog_back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/vs_24" />
+    </LinearLayout>
+
+</LinearLayout>

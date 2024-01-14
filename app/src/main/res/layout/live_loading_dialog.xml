@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/vs_10" >
+
+    <ImageView
+        android:id="@+id/live_loading_img"
+        android:layout_width="@dimen/vs_120"
+        android:layout_height="@dimen/vs_120"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/icon_loading" />
+
+    <TextView
+        android:id="@+id/live_loading_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="精彩节目，马上就有"
+        android:textColor="@color/white"
+        android:textSize="@dimen/vs_30"
+        android:textStyle="bold" />
+
+</LinearLayout>

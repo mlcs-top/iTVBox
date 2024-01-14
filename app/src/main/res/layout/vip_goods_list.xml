@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:focusable="true"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/vs_120"
+    android:background="@drawable/shape_setting_model_focus2"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.43">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:id="@+id/vip_goods_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="49"
+                        android:textColor="@color/vip_price_color"
+                        android:textSize="@dimen/vs_40"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vip_goods_price_company"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="元"
+                        android:textColor="@color/vip_price_color"
+                        android:textSize="@dimen/vs_20"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/vs_30"
+                android:paddingStart="@dimen/vs_30">
+
+                <TextView
+                    android:id="@+id/vip_goods_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="月度会员"
+                    android:textColor="@color/vip_price_color"
+                    android:textSize="@dimen/ts_30"/>
+
+                <TextView
+                    android:id="@+id/vip_goods_des_coen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="超值大礼，精彩内容低价看一年"
+                    android:textColor="@color/colorVideoCardTextNormal"
+                    android:textSize="@dimen/ts_20"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

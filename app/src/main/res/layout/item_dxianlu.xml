@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_dxianlu"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/vs_90"
+    android:layout_marginTop="@dimen/vs_10"
+    android:background="@drawable/shape_setting_model_focus2"
+    android:focusable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.43"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="线路名称"
+                android:textColor="@color/vip_price_color"
+                android:textSize="@dimen/vs_20"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/vs_30">
+
+                <TextView
+                    android:id="@+id/item_dxianlu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="多线路列表"
+                    android:textColor="@color/vip_price_color"
+                    android:textSize="@dimen/ts_30" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_update_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2023-09-30 12:18:18"
+                    android:textColor="@color/colorVideoCardTextNormal"
+                    android:textSize="@dimen/ts_20" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

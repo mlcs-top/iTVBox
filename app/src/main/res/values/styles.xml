@@ -1,0 +1,209 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/color_6200EE</item>
+        <item name="colorPrimaryDark">@color/color_3700B3</item>
+        <item name="colorAccent">@color/color_theme_40</item>
+    </style>
+
+    <style name="DialogAnim">
+        <item name="android:windowEnterAnimation">@anim/dialog_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_fade_out</item>
+    </style>
+    <style name="DialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground"> @android:color/transparent </item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="WiFiDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Exitdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="activity_vip_bt_style">
+        <item name="android:textSize">@dimen/vs_20</item>
+        <item name="android:onClick">vipNumberClick</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/vs_5</item>
+        <item name="android:layout_marginRight">@dimen/vs_5</item>
+        <item name="android:layout_width">@dimen/vs_200</item>
+        <item name="android:layout_height">@dimen/vs_70</item>
+    </style>
+    <style name="setting_menu_item_checked">
+        <item name="android:layout_marginRight">@dimen/vs_8</item>
+        <item name="android:visibility">gone</item>
+    </style>
+    <style name="setting_menu_item">
+        <item name="android:textColor">#A3A3A4</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="background">@drawable/setting_menu_item</item>
+        <item name="android:textSize">@dimen/vs_24</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="setting_menu_linear">
+        <item name="android:layout_width">@dimen/vs_270</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:clickable">true</item>-->
+        <!--        <item name="android:focusableInTouchMode">true</item>-->
+        <item name="android:focusable">true</item>
+        <item name="android:paddingTop">@dimen/vs_15</item>
+        <item name="android:paddingBottom">@dimen/vs_15</item>
+        <item name="android:layout_marginLeft">@dimen/vs_8</item>
+        <item name="android:layout_marginRight">@dimen/vs_8</item>
+        <item name="android:layout_marginBottom">@dimen/vs_12</item>
+    </style>
+
+    <style name="setting_menu_linear3">
+        <item name="android:layout_width">@dimen/vs_320</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--        <item name="android:clickable">true</item>-->
+        <!--        <item name="android:focusableInTouchMode">true</item>-->
+        <item name="android:focusable">true</item>
+        <item name="android:paddingTop">@dimen/vs_20</item>
+        <item name="android:paddingBottom">@dimen/vs_20</item>
+        <item name="android:layout_marginLeft">@dimen/vs_8</item>
+        <item name="android:layout_marginRight">@dimen/vs_8</item>
+        <item name="android:layout_marginBottom">@dimen/vs_12</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>//全屏即无通知栏
+        <item name="android:windowContentOverlay">@null</item>//是否有遮盖
+        <item name="windowNoTitle">true</item>
+        <!--        <item name="android:keepScreenOn">true</item>-->
+        <!--        <item name="android:windowBackground">@drawable/app_bg</item>-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 替代主题 -->
+    <style name="NetfxTheme" parent="AppTheme.NoActionBar">
+        <item name="color_theme">#D81F26</item>
+        <item name="color_theme_80">#CCD81F26</item>
+        <item name="color_theme_70">#B3D81F26</item>
+        <item name="color_theme_60">#99D81F26</item>
+        <item name="color_theme_50">#80D81F26</item>
+        <item name="color_theme_40">#66D81F26</item>
+        <item name="color_theme_dark_70">#B38C1418</item>
+    </style>
+    <style name="DoraeTheme" parent="AppTheme.NoActionBar">
+        <item name="color_theme">#18A2E7</item>
+        <item name="color_theme_80">#CC18A2E7</item>
+        <item name="color_theme_70">#B318A2E7</item>
+        <item name="color_theme_60">#9918A2E7</item>
+        <item name="color_theme_50">#8018A2E7</item>
+        <item name="color_theme_40">#6618A2E7</item>
+        <item name="color_theme_dark_70">#B3106D9C</item>
+    </style>
+    <style name="PepsiTheme" parent="AppTheme.NoActionBar">
+        <item name="color_theme">#004B93</item>
+        <item name="color_theme_80">#CC004B93</item>
+        <item name="color_theme_70">#B3004B93</item>
+        <item name="color_theme_60">#99004B93</item>
+        <item name="color_theme_50">#80004B93</item>
+        <item name="color_theme_40">#66004B93</item>
+        <item name="color_theme_dark_70">#B3002547</item>
+    </style>
+    <style name="NarutoTheme" parent="AppTheme.NoActionBar">
+        <item name="color_theme">#FF7439</item>
+        <item name="color_theme_80">#CCFF7439</item>
+        <item name="color_theme_70">#B3FF7439</item>
+        <item name="color_theme_60">#99FF7439</item>
+        <item name="color_theme_50">#80FF7439</item>
+        <item name="color_theme_40">#66FF7439</item>
+        <item name="color_theme_dark_70">#B3B35127</item>
+    </style>
+    <style name="MinionTheme" parent="AppTheme.NoActionBar">
+        <item name="color_theme">#FFD55E</item>
+        <item name="color_theme_80">#CCFFD55E</item>
+        <item name="color_theme_70">#B3FFD55E</item>
+        <item name="color_theme_60">#99FFD55E</item>
+        <item name="color_theme_50">#80FFD55E</item>
+        <item name="color_theme_40">#66FFD55E</item>
+        <item name="color_theme_dark_70">#B3B39542</item>
+    </style>
+    <style name="YagamiTheme" parent="AppTheme.NoActionBar">
+        <item name="color_theme">#FF2F70</item>
+        <item name="color_theme_80">#CCFF2F70</item>
+        <item name="color_theme_70">#B3FF2F70</item>
+        <item name="color_theme_60">#99FF2F70</item>
+        <item name="color_theme_50">#80FF2F70</item>
+        <item name="color_theme_40">#66FF2F70</item>
+        <item name="color_theme_dark_70">#B3B3204E</item>
+    </style>
+    <style name="SakuraTheme" parent="AppTheme.NoActionBar">
+        <item name="color_theme">#FD9BDB</item>
+        <item name="color_theme_80">#CCFD9BDB</item>
+        <item name="color_theme_70">#B3FD9BDB</item>
+        <item name="color_theme_60">#99FD9BDB</item>
+        <item name="color_theme_50">#80FD9BDB</item>
+        <item name="color_theme_40">#66FD9BDB</item>
+        <item name="color_theme_dark_70">#B3B06B98</item>
+    </style>
+
+
+
+    <!-- 自定义dialog样式 -->
+    <style name="CustomDialogStyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    <style name="CustomDialogStyleDim" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!-- Volume / Brightness Bar -->
+    <style name="video_vertical_progressBar">
+        <item name="android:maxWidth">12dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/play_progress_vertical</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">1dp</item>
+    </style>
+
+    <!-- Mini Progress Bar -->
+    <style name="video_horizontal_progressBar">
+        <item name="android:maxWidth">12dp</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@android:drawable/progress_indeterminate_horizontal</item>
+        <item name="android:progressDrawable">@drawable/play_progress_horizontal</item>
+        <item name="android:indeterminateDuration">3500</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:minWidth">1dp</item>
+    </style>
+</resources>

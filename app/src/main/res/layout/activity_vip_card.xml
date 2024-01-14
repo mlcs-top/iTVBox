@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/shape_dialog_filter_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/vs_30">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/vs_30"
+            android:text="兑换码"
+            android:textColor="@color/colorTextNormal"
+            android:textSize="@dimen/vs_50"
+            android:layout_marginStart="@dimen/vs_30" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/activity_vip_card_editText"
+                android:layout_width="@dimen/vs_480"
+                android:background="#fff"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="@dimen/vs_60"
+                android:layout_gravity="center"
+                android:hint="请输入您的兑换码"
+                android:paddingLeft="@dimen/vs_10"
+                android:textSize="@dimen/vs_20"
+                android:paddingStart="@dimen/vs_10"
+                tools:ignore="RtlSymmetry" />
+
+            <LinearLayout
+                android:id="@+id/iv_Cerd"
+                android:layout_marginRight="@dimen/vs_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/vs_10"
+                tools:ignore="RtlHardcoded">
+
+                <ImageView
+                    android:id="@+id/iv_CerdUrl"
+                    android:padding="@dimen/vs_15"
+                    android:layout_width="@dimen/vs_200"
+                    android:layout_height="@dimen/vs_200"
+                    android:src="@drawable/shop" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:text="扫码购买兑换码" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="1"
+                android:text="1"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="2"
+                android:text="2"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="3"
+                android:text="3"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                android:id="@+id/activity_vip_card_send"
+                android:layout_width="@dimen/vs_200"
+                android:layout_height="@dimen/vs_70"
+                android:layout_marginLeft="@dimen/vs_5"
+                android:layout_marginRight="@dimen/vs_5"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="确认兑换"
+                android:textColor="@drawable/user_fragment_textcolor_selector"
+                android:textSize="@dimen/vs_20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vs_10">
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="4"
+                android:text="4"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="5"
+                android:text="5"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="6"
+                android:text="6"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                android:id="@+id/activity_vip_card_delete"
+                android:layout_width="@dimen/vs_200"
+                android:layout_height="@dimen/vs_70"
+                android:layout_marginLeft="@dimen/vs_5"
+                android:layout_marginRight="@dimen/vs_5"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:clickable="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@drawable/user_fragment_textcolor_selector"
+                android:textSize="@dimen/vs_20" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vs_10">
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="7"
+                android:text="7"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="8"
+                android:text="8"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="9"
+                android:text="9"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+            <TextView
+                style="@style/activity_vip_bt_style"
+                android:background="@drawable/activity_vip_bt_selector"
+                android:tag="0"
+                android:text="0"
+                android:textColor="@drawable/user_fragment_textcolor_selector" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/vs_480"
+    android:layout_height="@dimen/vs_250" >
+
+    <LinearLayout
+        android:layout_width="@dimen/vs_480"
+        android:layout_height="@dimen/vs_250"
+        android:background="@drawable/wlan_dialog_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/wifi_dialog_content"
+            android:layout_width="@dimen/vs_480"
+            android:layout_height="@dimen/vs_200"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/vs_10" >
+            <!-- 这里是用户自定义显示布局的地方 -->
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/wifi_dialog_btns_ll"
+            android:layout_width="@dimen/vs_480"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/vs_20" >
+
+            <Button
+                android:id="@+id/wifi_dialog_bt1"
+                android:layout_width="@dimen/vs_100"
+                android:layout_height="@dimen/vs_50"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/vs_80"
+                android:background="@drawable/wifi_dialog_bt_selector"
+                android:textSize="@dimen/vs_20" />
+
+            <Button
+                android:id="@+id/wifi_dialog_bt2"
+                android:layout_width="@dimen/vs_100"
+                android:layout_height="@dimen/vs_50"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/vs_80"
+                android:background="@drawable/wifi_dialog_bt_selector"
+                android:textSize="@dimen/vs_20" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>

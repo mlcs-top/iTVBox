@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- 积分商城 -->
+        <TextView
+            android:textSize="@dimen/vs_60"
+            android:textColor="@color/color_FFFFFF"
+            android:layout_gravity="center|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vs_60"
+            android:text="开通会员观看专区所有资源" />
+        <TextView
+            android:textSize="@dimen/vs_30"
+            android:textColor="@color/color_FFFFFF"
+            android:layout_gravity="center|top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vs_140"
+            android:text="(每日签到、节日活动等可获得积分)" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/vs_60">
+            <com.owen.tvrecyclerview.widget.TvRecyclerView
+                android:orientation="horizontal"
+                android:id="@+id/tvShopList"
+                android:padding="@dimen/vs_15"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tv_horizontalSpacingWithMargins="@dimen/vs_10"
+                app:tv_layoutManager="V7LinearLayoutManager"
+                app:tv_selectedItemIsCentered="true"
+                app:tv_verticalSpacingWithMargins="@dimen/vs_10" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

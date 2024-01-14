@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/vs_320"
+    android:layout_height="@dimen/vs_200"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/vs_320"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/vs_4" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户名"
+            android:textColor="@color/white"
+            android:textSize="@dimen/vs_24" />
+
+        <EditText
+            android:id="@+id/user_name_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/vs_30"
+            android:layout_marginLeft="@dimen/vs_20"
+            android:background="@drawable/edit_bg"
+            android:hint="六位以上的数字或字母"
+            android:singleLine="true"
+            android:textSize="@dimen/vs_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vs_24"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/vs_4" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/vs_30"
+            android:gravity="center_vertical"
+            android:text="安全码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/vs_24" />
+
+        <EditText
+            android:id="@+id/user_pass_et"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/vs_30"
+            android:layout_marginLeft="@dimen/vs_20"
+            android:background="@drawable/edit_bg"
+            android:hint="六位以上的数字或字母"
+            android:singleLine="true"
+            android:textSize="@dimen/vs_24" />
+    </LinearLayout>
+
+</LinearLayout>
